@@ -5,7 +5,7 @@ total = 0
 quero_comprar = True
 
 while quero_comprar:
-    preco = float(input('Preço: '))
+    preco = float(input('Digite o preço do produto: '))
     total += preco
     opcao = input('Continuar comprando (s/n)? ')
     if opcao != 's': #usuario digita qualquer coisa diferete de s
