@@ -12,7 +12,7 @@ while calcular =='s' :
     elif op == '/':
         if y == 0:
             print('Divisão por zero!\n')
-            break
+            continue
         else:
             resultado = x / y    
     print(f'{x} {op} {y} = {resultado}\n')
