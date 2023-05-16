@@ -11,5 +11,5 @@
 #Crie um programa que solicite um numero natural e exiba a sequencia decrescente do numero até um.
 
 n = int(input('numero: '))
-for i in range(n, 0, -1): #[n..0]
+for i in range(n, 0, -1): #[n..0] #range (inicio, fim, pass)
     print (i, end=' ')
