@@ -3,11 +3,11 @@
 n=int(input('digite um Número: '))
 divisor = 2
 while divisor < n:
-    print (f'{n} % {divisor} = {n % divisor}')
+    print(f'{n} % {divisor} = {n % divisor}')
     if n % divisor == 0:
         break
     divisor += 1 
 if divisor == n:
     print('O numero é primo')
 else:
-    print ('Não é primo')
+    print('Não é primo')
