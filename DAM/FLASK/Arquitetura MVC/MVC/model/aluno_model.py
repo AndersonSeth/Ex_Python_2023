@@ -17,6 +17,21 @@ def getAlunoId(id_consulta):
             return aluno
         return None
 
+def inserirAluno(aluno):
+    novo_aluno = aluno
+    database.append(novo_aluno)
+    return
+
+def excluirAluno(aluno):
+    database.remove(aluno)
+
+
+def alterarAluno(aluno, novo_aluno):
+    excluirAluno(aluno)
+    inserirAluno(novo_aluno)
+    return
+
+
 def getAlunoMaiorMedia():
     maior_media = 0
     alunos_maior_media = []
@@ -29,3 +44,4 @@ def getAlunoMaiorMedia():
     if alunos_maior_media:
         return jsonify(alunos_maior_media)    
     return None
+
