@@ -20,6 +20,20 @@ def getAlunosId(id_consulta):
 def getAlunoMaiorMedia():
     return aluno_controller.localizarPorMaiorMedia()
 
+@app.route('/alunos', methods=['POST'])
+def inserir():
+    aluno = request.json
+    return aluno_controller.inserirAluno(aluno)
+
+@app.route('/alunos/<int:id_deletar>', methods=['DELETE'])
+def excluir(id_deletar):
+    return aluno_controller.excluirPorId(id_deletar)
+
+@app.route('/alunos/<int:id_alterar>', methods=['PUT'])
+def alterar(id_alterar):
+    aluno = request.json
+    return aluno_controller.alterarAluno(id_alterar, aluno)
+
 
 
 
